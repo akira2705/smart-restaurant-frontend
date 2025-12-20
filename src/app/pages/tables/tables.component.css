@@ -1,0 +1,49 @@
+.tables-page {
+  padding: 32px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.table-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.table-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.available {
+  border-left: 6px solid #22C55E;
+}
+
+.reserved {
+  border-left: 6px solid #F59E0B;
+}
+
+.occupied {
+  border-left: 6px solid #EF4444;
+}
+
+.table-card {
+  background: white;
+  border-radius: 14px;
+  padding: 8px;
+}
+
+
+mat-card {
+  transition: all 0.25s ease;
+}
+
+mat-card:hover {
+  transform: translateY(-6px);
+}

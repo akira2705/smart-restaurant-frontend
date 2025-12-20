@@ -1,0 +1,14 @@
+<div class="queue-page">
+  <h2>Queue</h2>
+
+  <p>Join the waiting queue for a table.</p>
+
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="joinQueue()"
+    [disabled]="loading"
+  >
+    {{ loading ? 'Joining...' : 'Join Queue' }}
+  </button>
+</div>

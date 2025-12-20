@@ -1,0 +1,16 @@
+.navbar {
+  background: linear-gradient(90deg, #4F46E5, #6366F1);
+  color: white;
+  padding: 0 24px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
+
+button {
+  font-weight: 500;
+  color: white;
+}

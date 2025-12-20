@@ -1,0 +1,14 @@
+<div class="manager-page">
+  <h2>Manager Control Panel</h2>
+
+  <p>Seat the next customer from the queue.</p>
+
+  <button
+    mat-raised-button
+    color="accent"
+    (click)="seatNextCustomer()"
+    [disabled]="loading"
+  >
+    {{ loading ? 'Seating...' : 'Seat Next Customer' }}
+  </button>
+</div>

@@ -1,1 +1,124 @@
-/* You can add global styles to this file, and also import other style files */
+/* ================================
+   Global Reset & Typography
+================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f7f9fc;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================
+   Typography Hierarchy
+================================ */
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6B7280;
+}
+
+/* ================================
+   Layout Helpers (Commercial Feel)
+================================ */
+
+.page {
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+/* ================================
+   Material Component Enhancements
+================================ */
+
+mat-card {
+  border-radius: 14px !important;
+}
+
+button,
+.mat-button,
+.mat-raised-button {
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+/* ================================
+   Subtle Motion (Premium Feel)
+================================ */
+
+mat-card,
+button {
+  transition: all 0.25s ease;
+}
+
+mat-card:hover {
+  transform: translateY(-4px);
+}
+/* ================================
+   Brand Color Tokens (CSS-based)
+================================ */
+
+:root {
+  --brand-primary: #4F46E5; /* Indigo */
+  --brand-accent: #22C55E;  /* Green */
+  --brand-danger: #EF4444;  /* Red */
+  --brand-bg: #f7f9fc;
+  --brand-card: #ffffff;
+}
+
+/* ================================
+   Override Material Colors SAFELY
+================================ */
+
+.mat-mdc-raised-button.mat-primary {
+  background-color: var(--brand-primary) !important;
+}
+
+.mat-mdc-raised-button.mat-accent {
+  background-color: var(--brand-accent) !important;
+}
+
+.mat-mdc-raised-button.mat-warn {
+  background-color: var(--brand-danger) !important;
+}
+
+.mat-mdc-card {
+  background-color: var(--brand-card);
+}
